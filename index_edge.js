@@ -51,7 +51,7 @@ var symbols = {
             {
                 id: 'd',
                 type: 'image',
-                rect: ['122px', '30px','196px','130px','auto', 'auto'],
+                rect: ['124px', '30px','196px','130px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"d.png",'0px','0px']
             },
             {
@@ -65,7 +65,7 @@ var symbols = {
             {
                 id: 'Text2Copy2',
                 type: 'text',
-                rect: ['35px', '241px','146px','83px','auto', 'auto'],
+                rect: ['30px', '241px','146px','83px','auto', 'auto'],
                 text: "м. Чернівці, <br>вул. Чорноморська, <br>4-А",
                 align: "left",
                 font: ['ubuntu, sans-serif', 12, "rgba(0,0,0,1.00)", "900", "none", "normal"]
@@ -98,12 +98,12 @@ var symbols = {
                 ["style", "-ms-transform-origin", [2.25,43.36],{valueTemplate:'@@0@@% @@1@@%'}],
                 ["style", "msTransformOrigin", [2.25,43.36],{valueTemplate:'@@0@@% @@1@@%'}],
                 ["style", "-o-transform-origin", [2.25,43.36],{valueTemplate:'@@0@@% @@1@@%'}],
-                ["color", "background-color", 'rgba(0,0,0,1.00)'],
-                ["style", "height", '65px'],
                 ["style", "top", '57px'],
+                ["color", "background-color", 'rgba(0,0,0,1.00)'],
                 ["transform", "scaleX", '1'],
+                ["style", "height", '65px'],
                 ["style", "opacity", '0'],
-                ["style", "left", '3px'],
+                ["style", "left", '7px'],
                 ["style", "width", '179px']
             ],
             "${_Text2Copy}": [
@@ -120,8 +120,8 @@ var symbols = {
             "${_m}": [
                 ["style", "top", '18px'],
                 ["transform", "scaleY", '1.3'],
-                ["transform", "scaleX", '1.3'],
                 ["style", "height", '147px'],
+                ["transform", "scaleX", '1.3'],
                 ["style", "opacity", '0'],
                 ["style", "left", '34px'],
                 ["style", "width", '231px']
@@ -143,53 +143,53 @@ var symbols = {
                 ["transform", "scaleY", '0'],
                 ["style", "height", '83px'],
                 ["style", "font-family", 'Arial, Helvetica, sans-serif'],
-                ["style", "opacity", '0'],
-                ["transform", "scaleX", '0']
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0']
             ],
             "${_L1}": [
                 ["style", "top", '-289px'],
                 ["transform", "scaleY", '0.22'],
-                ["style", "left", '-265px'],
+                ["style", "clip", [-27.272727966308594,910,177.27272033691406,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["transform", "scaleX", '0.21'],
                 ["style", "opacity", '0'],
-                ["style", "background-position", [0,0], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "clip", [-27.272727966308594,910,177.27272033691406,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+                ["style", "left", '-265px'],
+                ["style", "background-position", [0,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
             "${_Text2Copy2}": [
                 ["color", "color", 'rgba(0,0,0,1.00)'],
                 ["style", "font-weight", '900'],
-                ["style", "left", '-160px'],
+                ["style", "left", '30px'],
                 ["style", "width", '146px'],
                 ["style", "top", '111px'],
                 ["transform", "scaleY", '0'],
                 ["style", "height", '83px'],
                 ["style", "font-family", 'ubuntu, sans-serif'],
-                ["style", "opacity", '1'],
-                ["transform", "scaleX", '0']
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '1']
             ],
             "${_Stage}": [
                 ["color", "background-color", 'rgba(255,255,255,1)'],
-                ["style", "overflow", 'hidden'],
+                ["style", "width", '300px'],
                 ["style", "height", '180px'],
-                ["style", "width", '300px']
+                ["style", "overflow", 'hidden']
             ],
             "${_d}": [
                 ["style", "top", '30px'],
                 ["transform", "scaleY", '1.3'],
-                ["style", "height", '130px'],
                 ["transform", "scaleX", '1.3'],
+                ["style", "height", '130px'],
                 ["style", "opacity", '0'],
-                ["style", "left", '122px'],
+                ["style", "left", '124px'],
                 ["style", "width", '196px']
             ],
             "${_L2}": [
-                ["style", "top", '-407px'],
+                ["style", "top", '-386px'],
                 ["transform", "scaleY", '0.2'],
-                ["style", "left", '-359px'],
+                ["style", "clip", [327.2727355957031,910,240.90907287597656,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["transform", "scaleX", '0.19'],
                 ["style", "opacity", '1'],
-                ["style", "background-position", [0,327.27272727273], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "clip", [327.2727355957031,910,240.90907287597656,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
+                ["style", "left", '-359px'],
+                ["style", "background-position", [0,327.27272727273], {valueTemplate:'@@0@@px @@1@@px'} ]
             ]
         }
     },
@@ -197,45 +197,43 @@ var symbols = {
         "Default Timeline": {
             fromState: "Base State",
             toState: "",
-            duration: 15000,
+            duration: 20000,
             autoPlay: true,
             timeline: [
                 { id: "eid151", tween: [ "style", "${_Text2}", "opacity", '1', { fromValue: '0'}], position: 671, duration: 171 },
-                { id: "eid230", tween: [ "style", "${_Text2}", "opacity", '1', { fromValue: '0'}], position: 12809, duration: 171 },
-                { id: "eid152", tween: [ "style", "${_Text2}", "opacity", '0', { fromValue: '1'}], position: 14807, duration: 193 },
+                { id: "eid230", tween: [ "style", "${_Text2}", "opacity", '1', { fromValue: '0'}], position: 17604, duration: 205 },
+                { id: "eid152", tween: [ "style", "${_Text2}", "opacity", '0', { fromValue: '1'}], position: 19807, duration: 193 },
                 { id: "eid2", tween: [ "style", "${_m}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 329 },
-                { id: "eid148", tween: [ "style", "${_m}", "opacity", '0', { fromValue: '1'}], position: 14807, duration: 193 },
+                { id: "eid148", tween: [ "style", "${_m}", "opacity", '0', { fromValue: '1'}], position: 19807, duration: 193 },
                 { id: "eid229", tween: [ "style", "${_Text2}", "top", '141px', { fromValue: '111px'}], position: 276, duration: 395 },
-                { id: "eid134", tween: [ "style", "${_Text2}", "top", '77px', { fromValue: '141px'}], position: 12653, duration: 375 },
-                { id: "eid119", tween: [ "style", "${_Text2}", "top", '111px', { fromValue: '77px'}], position: 14807, duration: 193 },
-                { id: "eid180", tween: [ "style", "${_L1}", "opacity", '1', { fromValue: '0'}], position: 546, duration: 143 },
+                { id: "eid134", tween: [ "style", "${_Text2}", "top", '77px', { fromValue: '141px'}], position: 17500, duration: 375 },
+                { id: "eid180", tween: [ "style", "${_L1}", "opacity", '1', { fromValue: '0'}], position: 607, duration: 143 },
                 { id: "eid12", tween: [ "style", "${_lo}", "left", '-1px', { fromValue: '-207px'}], position: 0, duration: 276 },
-                { id: "eid157", tween: [ "style", "${_lo}", "left", '-174px', { fromValue: '-1px'}], position: 14807, duration: 193 },
-                { id: "eid129", tween: [ "transform", "${_Text2Copy2}", "scaleX", '1.2', { fromValue: '0'}], position: 13028, duration: 375 },
-                { id: "eid131", tween: [ "style", "${_Text2Copy2}", "top", '128px', { fromValue: '111px'}], position: 13028, duration: 375 },
-                { id: "eid141", tween: [ "style", "${_Text2Copy2}", "left", '35px', { fromValue: '-160px'}], position: 12653, duration: 423 },
+                { id: "eid157", tween: [ "style", "${_lo}", "left", '-174px', { fromValue: '-1px'}], position: 19807, duration: 193 },
+                { id: "eid233", tween: [ "style", "${_L2}", "top", '-407px', { fromValue: '-386px'}], position: 9158, duration: 342, easing: "easeInQuad" },
+                { id: "eid129", tween: [ "transform", "${_Text2Copy2}", "scaleX", '1.2', { fromValue: '0'}], position: 17500, duration: 375 },
+                { id: "eid131", tween: [ "style", "${_Text2Copy2}", "top", '127px', { fromValue: '111px'}], position: 17500, duration: 375 },
                 { id: "eid228", tween: [ "style", "${_Text2}", "left", '34px', { fromValue: '-166px'}], position: 276, duration: 395 },
-                { id: "eid142", tween: [ "style", "${_Text2}", "left", '29px', { fromValue: '-166px'}], position: 12653, duration: 375 },
-                { id: "eid135", tween: [ "transform", "${_RoundRect}", "scaleX", '0', { fromValue: '1'}], position: 12500, duration: 309 },
-                { id: "eid218", tween: [ "style", "${_L2}", "clip", [327.2727355957031,910,531.5072021484375,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [327.2727355957031,910,240.90907287597656,0]}], position: 6396, duration: 604, easing: "easeInQuad" },
-                { id: "eid204", tween: [ "style", "${_L2}", "background-position", [0,109.09090909091], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,327.27272727273]}], position: 7374, duration: 776 },
-                { id: "eid207", tween: [ "style", "${_L2}", "background-position", [0,-95.041502], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,106.98169279627847]}], position: 8437, duration: 813, easing: "easeInQuad" },
-                { id: "eid211", tween: [ "style", "${_L2}", "background-position", [0,-300.16967582812], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-95.041502]}], position: 9500, duration: 684, easing: "easeInQuad" },
-                { id: "eid212", tween: [ "style", "${_L2}", "background-position", [0,-513.84521310937], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-300.169676]}], position: 10564, duration: 767, easing: "easeInQuad" },
-                { id: "eid133", tween: [ "transform", "${_Text2}", "scaleY", '1.3', { fromValue: '0'}], position: 0, duration: 171 },
-                { id: "eid138", tween: [ "style", "${_RoundRect}", "left", '-185px', { fromValue: '3px'}], position: 12832, duration: 168 },
-                { id: "eid166", tween: [ "style", "${_L2}", "opacity", '0', { fromValue: '1'}], position: 11820, duration: 104 },
-                { id: "eid130", tween: [ "transform", "${_Text2Copy2}", "scaleY", '1.2', { fromValue: '0'}], position: 13028, duration: 375 },
-                { id: "eid147", tween: [ "style", "${_Text2Copy2}", "opacity", '0', { fromValue: '1'}], position: 14625, duration: 375 },
+                { id: "eid135", tween: [ "transform", "${_RoundRect}", "scaleX", '0', { fromValue: '1'}], position: 17500, duration: 309 },
+                { id: "eid218", tween: [ "style", "${_L2}", "clip", [327.2727355957031,910,531.5072021484375,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [327.2727355957031,910,240.90907287597656,0]}], position: 8896, duration: 604, easing: "easeInQuad" },
+                { id: "eid204", tween: [ "style", "${_L2}", "background-position", [0,109.09090909091], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,327.27272727273]}], position: 10500, duration: 776 },
+                { id: "eid207", tween: [ "style", "${_L2}", "background-position", [0,-95.041502], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,106.98169279627847]}], position: 12250, duration: 750, easing: "easeInQuad" },
+                { id: "eid211", tween: [ "style", "${_L2}", "background-position", [0,-330.169676], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-95.041502]}], position: 14250, duration: 750, easing: "easeInQuad" },
+                { id: "eid212", tween: [ "style", "${_L2}", "background-position", [0,-558.845213], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-330.169676]}], position: 16028, duration: 722, easing: "easeInQuad" },
+                { id: "eid132", tween: [ "transform", "${_Text2}", "scaleX", '1.3', { fromValue: '0'}], position: 0, duration: 171 },
+                { id: "eid138", tween: [ "style", "${_RoundRect}", "left", '-185px', { fromValue: '7px'}], position: 17832, duration: 168 },
+                { id: "eid166", tween: [ "style", "${_L2}", "opacity", '0', { fromValue: '1'}], position: 17500, duration: 104 },
+                { id: "eid130", tween: [ "transform", "${_Text2Copy2}", "scaleY", '1.2', { fromValue: '0'}], position: 17500, duration: 375 },
+                { id: "eid174", tween: [ "style", "${_L1}", "background-position", [0,-193.939394], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,0]}], position: 1750, duration: 750, easing: "easeInQuad" },
+                { id: "eid175", tween: [ "style", "${_L1}", "background-position", [0,-355.909264], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-193.939394]}], position: 3500, duration: 750, easing: "easeInQuad" },
+                { id: "eid213", tween: [ "style", "${_L1}", "background-position", [0,-561.81413793466], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-355.909264]}], position: 5250, duration: 750, easing: "easeInQuad" },
+                { id: "eid215", tween: [ "style", "${_L1}", "background-position", [0,-752.17835142329], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-561.814138]}], position: 7000, duration: 750 },
+                { id: "eid223", tween: [ "style", "${_L1}", "background-position", [0,-942.54367415341], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-752.178351]}], position: 8750, duration: 750 },
+                { id: "eid172", tween: [ "style", "${_RoundRect}", "opacity", '1', { fromValue: '0'}], position: 607, duration: 143 },
                 { id: "eid9", tween: [ "style", "${_d}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 171 },
-                { id: "eid149", tween: [ "style", "${_d}", "opacity", '0', { fromValue: '1'}], position: 14807, duration: 193 },
-                { id: "eid172", tween: [ "style", "${_RoundRect}", "opacity", '1', { fromValue: '0'}], position: 546, duration: 143 },
-                { id: "eid174", tween: [ "style", "${_L1}", "background-position", [0,-193.939394], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,0]}], position: 1250, duration: 750, easing: "easeInQuad" },
-                { id: "eid175", tween: [ "style", "${_L1}", "background-position", [0,-355.909264], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-193.939394]}], position: 2565, duration: 685, easing: "easeInQuad" },
-                { id: "eid213", tween: [ "style", "${_L1}", "background-position", [0,-561.81413793466], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-355.909264]}], position: 3681, duration: 916, easing: "easeInQuad" },
-                { id: "eid215", tween: [ "style", "${_L1}", "background-position", [0,-752.17835142329], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-561.814138]}], position: 5000, duration: 1000 },
-                { id: "eid223", tween: [ "style", "${_L1}", "background-position", [0,-942.54367415341], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,-752.178351]}], position: 6349, duration: 455 },
-                { id: "eid132", tween: [ "transform", "${_Text2}", "scaleX", '1.3', { fromValue: '0'}], position: 0, duration: 171 }            ]
+                { id: "eid149", tween: [ "style", "${_d}", "opacity", '0', { fromValue: '1'}], position: 19807, duration: 193 },
+                { id: "eid147", tween: [ "style", "${_Text2Copy2}", "opacity", '0', { fromValue: '1'}], position: 19625, duration: 375 },
+                { id: "eid133", tween: [ "transform", "${_Text2}", "scaleY", '1.3', { fromValue: '0'}], position: 0, duration: 171 }            ]
         }
     }
 }
